@@ -3,3 +3,7 @@ docker ps
 // เอา id จาก ps ไปใส่ในบรรทัด 4
 docker exec -it redis sh
 redis-cli
+
+docker build .
+docker-compose up --build
+docker-compose down

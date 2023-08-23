@@ -1,0 +1,5 @@
+docker run--name redis -p 6379:6379 -d redis
+docker ps
+// เอา id จาก ps ไปใส่ในบรรทัด 4
+docker exec -it redis sh
+redis-cli

@@ -1,0 +1,11 @@
+version: '3.9'
+services:
+  redis-test:
+    image: redis:7
+    container_name: redis-test
+    ports:
+      - 6379:6379
+  node-app:
+    build: .
+    ports:
+      - "3000:3000"
